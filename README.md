@@ -4,7 +4,9 @@
 Define and display decimal precision based on currency
 
 @version     1.0.0, last modified February 2020
+
 @author 	 Didi Kusnadi<jalapro08@gmail.com>
+
 @link        http://didikusnadi.com
 
 ---
