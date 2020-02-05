@@ -43,7 +43,7 @@ class Currency extends AbstractFieldArray
     protected function _prepareToRender()
     {
         $this->addColumn('currency', ['label' => __('Currency'), 'class' => 'required-entry', 'renderer' => $this->currency->create()]);
-        $this->addColumn('precision', ['label' => __('Precision*'), 'class' => 'validate-number']);
+        $this->addColumn('precision', ['label' => __('Precision'), 'class' => 'required-entry validate-number']);
         $this->_addAfter = false;
         $this->_addButtonLabel = __('Add');
     }
