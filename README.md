@@ -9,18 +9,16 @@ Define and display decimal precision based on currency
 
 ---
 ##### Version 1.0
+
 Initial Release
 
 ##### Minimum Requirement
+
 Magento 2.2
 
 ##### How to Install
-1. Add repository to composer.json
 
-   ```composer config repositories.kemana/module-paymentnotifier git git@git.kemana.com:m2-extension/module-paymentnotifier.git```
-1. Intall module
-
-   ```composer require 'kemana/module-paymentnotifier:1.0.3'```
+   ```composer require xtendable/price-precision```
 
 ##### Configure Decimal Precision from Backend
 
