@@ -1,9 +1,8 @@
 {
   "name": "xtendable/price-precision",
-  "description": "N/A",
+  "description": "Define and display decimal precision based on currency",
   "require": {
-    "php": "~5.5.0|~5.6.0|~7.0.0",
-    "magento/module-catalog": "100.0.*"
+    "php": ">=7.0.0"
   },
   "type": "magento2-module",
   "version": "1.0.0",
@@ -26,5 +25,10 @@
     "psr-4": {
       "Xtendable\\PricePrecision\\": ""
     }
-  }
+  },
+    "extra": {
+        "branch-alias": {
+            "1.0.0": "master"
+        }
+    }
 }
