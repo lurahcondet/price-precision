@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Xtendable_PricePrecision
+ *
+ * @see    README.md
+ * @author Didi Kusnadi<jalapro08@gmail.com>
+ *
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Pricing\Render\Amount">
+        <plugin name="xtendable_priceprecision_framework_pricing_render_amount" type="Xtendable\PricePrecision\Plugin\Framework\Pricing\Render\Amount" />
+    </type>
+    <type name="Magento\Directory\Model\PriceCurrency">
+        <plugin name="xtendable_priceprecision_directory_model_pricecurrency" type="Xtendable\PricePrecision\Plugin\Directory\Model\PriceCurrency" />
+    </type>
+    <type name="Magento\Framework\Locale\Format">
+        <plugin name="xtendable_priceprecision_framework_locale_format" type="Xtendable\PricePrecision\Plugin\Framework\Locale\Format" />
+    </type>
+    <type name="Magento\Framework\Currency">
+        <plugin name="xtendable_priceprecision_framework_currency" type="Xtendable\PricePrecision\Plugin\Framework\Currency" />
+    </type>
+    <type name="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Eav">
+        <plugin name="xtendable_priceprecision_product_form_modifier_eav" type="Xtendable\PricePrecision\Plugin\Product\Form\Modifier\Eav" />
+    </type>
+</config>

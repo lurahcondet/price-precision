@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Xtendable_PricePrecision
+ *
+ * @see    README.md
+ * @author Didi Kusnadi<jalapro08@gmail.com>
+ *
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="currency" showInDefault="1" type="text" translate="label" sortOrder="10">
+            <group id="options" showInDefault="1" sortOrder="5">
+                <field id="default_precision" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Default Decimal Precision</label>
+                </field>
+                <field id="currency_precision" translate="label" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Decimal Precision</label>
+                    <frontend_model>Xtendable\PricePrecision\Block\Adminhtml\Form\Field\Currency</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
