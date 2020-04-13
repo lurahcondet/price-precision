@@ -25,10 +25,5 @@
     "psr-4": {
       "Xtendable\\PricePrecision\\": ""
     }
-  },
-    "extra": {
-        "branch-alias": {
-            "1.0.0": "stable-dev"
-        }
-    }
+  }
 }
