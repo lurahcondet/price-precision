@@ -32,7 +32,7 @@ class PriceCurrency extends \Xtendable\PricePrecision\Plugin\AbstractClass
         $currency = null,
         $precision = \Magento\Directory\Model\PriceCurrency::DEFAULT_PRECISION
     ) {
-        $atCurrency = $subject->getCurrencySymbol($scope, $currency);
+        $atCurrency = $subject->getCurrency($scope, $currency)->getCode();
         $atPrecision = $this->helper->getPrecisionByCurrency($atCurrency);
         return [$amount, $scope, $currency, $atPrecision];
     }
@@ -56,7 +56,7 @@ class PriceCurrency extends \Xtendable\PricePrecision\Plugin\AbstractClass
         $scope = null,
         $currency = null
     ) {
-        $atCurrency = $subject->getCurrencySymbol($scope, $currency);
+        $atCurrency = $subject->getCurrency($scope, $currency)->getCode();
         $atPrecision = $this->helper->getPrecisionByCurrency($atCurrency);
         return [$amount, $includeContainer, $atPrecision, $scope, $currency];
     }
